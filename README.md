@@ -9,14 +9,16 @@
 
 <img src="assets/network.jpg" width="800px"/>
 
+>**Abstract:**
+>Current deep learning methods for low-light image enhancement (LLIE) typically rely on pixel-wise mapping learned from paired data. However, these methods often overlook the importance of considering degradation representations, which can lead to sub-optimal outcomes. >In this paper, we address this limitation by proposing a degradation-aware learning scheme for LLIE using diffusion models, which effectively integrates degradation and image priors into the diffusion process, resulting in improved image enhancement. Our proposed degradation-aware learning scheme is based on the understanding that degradation representations play a crucial role in accurately modeling and capturing the specific degradation patterns present in low-light images. To this end, First, a joint learning framework for both image generation and image enhancement is presented to learn the degradation representations. Second, to leverage the learned degradation representations, we develop a Low-Light Diffusion model (LLDiffusion) with a well-designed dynamic diffusion module. This module takes into account both the color map and the latent degradation representations to guide the diffusion process. By incorporating these conditioning factors, the proposed LLDiffusion can effectively enhance low-light images, considering both the inherent degradation patterns and the desired color fidelity. Finally, we evaluate our proposed method on several well-known benchmark datasets, including synthetic and real-world unpaired datasets. Extensive experiments on public benchmarks demonstrate that our LLDiffusion outperforms state-of-the-art LLIE methods both quantitatively and qualitatively. The source code and pre-trained models are available at https://github.com/TaoWangzj/LLDiffusion.
 
 ### TODO
 - [ ] HuggingFace demo (If necessary)
-- [ ] Relase our Real-world Tesing dataset for real-world LLIE.  
-- [ ] Relase the Pre-trained models
-- [ ] Relase the codes
+- [ ] Release our Real-world Tesing dataset for real-world LLIE.  
+- [ ] Release the Pre-trained models
+- [ ] Release the codes
 - [ ] Relase Homepage
-- [ ] Paper on Arxiv 
+- [x] ~~Paper on Arxiv~~ 
 
 
 
