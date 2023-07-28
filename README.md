@@ -4,7 +4,7 @@
 
 [Tao Wang](https://scholar.google.com/citations?user=TsDufoMAAAAJ&hl=en), [Kaihao Zhang](https://scholar.google.com/citations?user=eqwDXdMAAAAJ&hl=en), [Ziqian Shao](), [Wenhan Luo](https://scholar.google.com/citations?user=g20Q12MAAAAJ&hl=en), [Bjorn Stenger](https://scholar.google.com/citations?user=plhjgHUAAAAJ&hl=en), [Tong Lu](https://cs.nju.edu.cn/lutong/index.htm), [Tae-Kyun Kim](https://scholar.google.com.hk/citations?user=j2WcLecAAAAJ&hl=zh-CN), [Wei Liu](https://scholar.google.com.hk/citations?user=AjxoEpIAAAAJ&hl=zh-CN), [Hongdong Li](https://scholar.google.com.hk/citations?user=Mq89JAcAAAAJ&hl=zh-CN)
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2307.14659.pdf)
 
 
 <img src="assets/network.jpg" width="800px"/>
