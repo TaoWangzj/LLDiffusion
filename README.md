@@ -20,6 +20,18 @@
 - [ ] Relase Homepage
 - [x] ~~Paper on Arxiv~~ 
 
+## Citations
+If UHDLOL benchmark and LLFormer help your research or work, please consider citing:
+
+```
+@article{wang2023lldiffusion,
+     title={LLDiffusion: Learning Degradation Representations in Diffusion Models for Low-Light Image Enhancement},
+     author={Wang, Tao and Zhang, Kaihao, and Shao, Ziqian and Luo, Wenhan and Stenger, Bjorn and Lu, Tong and Kim, Tae-Kyun and 
+        Liu, Wei and  Li, Hongdong },
+     journal={arXiv preprint arXiv:2307.14659},
+     year={2023}
+    }
+```
 
 
 
