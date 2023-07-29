@@ -21,7 +21,7 @@
 - [x] ~~Paper on Arxiv~~ 
 
 ## Citations
-If UHDLOL benchmark and LLFormer help your research or work, please consider citing:
+If our work help your research or work, please consider citing:
 
 ```
 @article{wang2023lldiffusion,
