@@ -1,0 +1,11 @@
+einops
+loguru
+lpips
+numpy
+pyyaml
+scikit-image
+tensorboard
+timm
+torch
+torchmetrics
+torchvision

@@ -1,0 +1,144 @@
+[
+    3,
+    3,
+    32,
+    4,
+    32,
+    1,
+    {
+        "name": "train_rebuttal_smallNet_ch32_blocks1",
+        "use_tb_logger": true,
+        "model": "LLFlow",
+        "distortion": "sr",
+        "scale": 1,
+        "gpu_ids": null,
+        "dataset": "LoL",
+        "optimize_all_z": false,
+        "cond_encoder": "ConEncoder1",
+        "train_gt_ratio": 0.2,
+        "avg_color_map": false,
+        "concat_histeq": true,
+        "histeq_as_input": false,
+        "concat_color_map": false,
+        "gray_map": false,
+        "align_condition_feature": false,
+        "align_weight": 0.001,
+        "align_maxpool": true,
+        "to_yuv": false,
+        "encode_color_map": false,
+        "le_curve": false,
+        "datasets": {
+            "train": {
+                "root": "/data/sets/LOL",
+                "quant": 32,
+                "use_shuffle": true,
+                "n_workers": 1,
+                "batch_size": 16,
+                "use_flip": true,
+                "color": "RGB",
+                "use_crop": true,
+                "GT_size": 160,
+                "noise_prob": 0,
+                "noise_level": 5,
+                "log_low": true,
+                "gamma_aug": false,
+                "phase": "train",
+                "scale": 1,
+                "data_type": "img"
+            },
+            "val": {
+                "root": "/data/sets/LOL",
+                "n_workers": 1,
+                "quant": 32,
+                "n_max": 20,
+                "batch_size": 1,
+                "log_low": true,
+                "phase": "val",
+                "scale": 1,
+                "data_type": "img"
+            }
+        },
+        "dataroot_unpaired": "/home/data/Dataset/LOL_test/Fusion",
+        "dataroot_GT": "/data/sets/LOL/eval15/high",
+        "dataroot_LR": "/data/sets/LOL/eval15/low",
+        "model_path": "/home/ziqian/repos/LLFlow/experiments/train_rebuttal_smallNet_ch32_blocks1/models/best_psnr_G.pth",
+        "heat": 0,
+        "network_G": {
+            "which_model_G": "LLFlow",
+            "in_nc": 3,
+            "out_nc": 3,
+            "nf": 32,
+            "nb": 4,
+            "train_RRDB": false,
+            "train_RRDB_delay": 0.5,
+            "flow": {
+                "K": 4,
+                "L": 3,
+                "noInitialInj": true,
+                "coupling": "CondAffineSeparatedAndCond",
+                "additionalFlowNoAffine": 2,
+                "conditionInFeaDim": 64,
+                "split": {
+                    "enable": false
+                },
+                "fea_up0": true,
+                "stackRRDB": {
+                    "blocks": [
+                        1
+                    ],
+                    "concat": true
+                }
+            },
+            "scale": 1
+        },
+        "path": {
+            "strict_load": true,
+            "resume_state": "auto",
+            "root": "/home/ziqian/repos/LLFlow",
+            "results_root": "/home/ziqian/repos/LLFlow/results/train_rebuttal_smallNet_ch32_blocks1",
+            "log": "/home/ziqian/repos/LLFlow/results/train_rebuttal_smallNet_ch32_blocks1"
+        },
+        "train": {
+            "manual_seed": 10,
+            "lr_G": 0.0005,
+            "weight_decay_G": 0,
+            "beta1": 0.9,
+            "beta2": 0.99,
+            "lr_scheme": "MultiStepLR",
+            "warmup_iter": -1,
+            "lr_steps_rel": [
+                0.5,
+                0.75,
+                0.9,
+                0.95
+            ],
+            "lr_gamma": 0.5,
+            "weight_l1": 0,
+            "weight_fl": 1,
+            "niter": 45000,
+            "val_freq": 200,
+            "lr_steps": [
+                22500,
+                33750,
+                40500,
+                42750
+            ]
+        },
+        "val": {
+            "n_sample": 4
+        },
+        "test": {
+            "heats": [
+                0.0,
+                0.7,
+                0.8,
+                0.9
+            ]
+        },
+        "logger": {
+            "print_freq": 100,
+            "save_checkpoint_freq": 1000.0
+        },
+        "is_train": false
+    }
+]
