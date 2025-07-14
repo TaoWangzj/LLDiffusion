@@ -106,6 +106,11 @@ Experiments are performed for different LLIE datasets including, LOL, VE-LOL, LO
 <img src = "assets/real-world.jpg"> 
 </details>
 
+## Reference Repositories
+This implementation is based on / inspired by:
+- Restormer: https://github.com/swz30/Restormer
+- WeatherDiffusion: https://github.com/IGITUGraz/WeatherDiffusion
+- LLFormer: https://github.com/TaoWangzj/LLFormer
 
 ## Citations
 If our work helps your research or work, please consider citing:
