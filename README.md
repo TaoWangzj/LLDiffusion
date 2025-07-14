@@ -43,7 +43,12 @@ pip install -r requirements.txt
 
 4. Download the checkpoints from our [Link](https://pan.baidu.com/s/1WH_QcFOeVS5W9f6e5mQ4HA?pwd=kfeh).
 
-5. Download our proposed real-world LLIE dataset from our our [Link]( https://pan.baidu.com/s/1nOFRNXolUW_stLmp80m7Wg?pwd=cpg9).
+5. Download our proposed real-world LLIE dataset from our [Link]( https://pan.baidu.com/s/1nOFRNXolUW_stLmp80m7Wg?pwd=cpg9).
+
+6. Clone Repo
+```
+git clone https://github.com/TaoWangzj/LLDiffusion.git
+```
 
 ## Train
 
