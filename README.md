@@ -52,9 +52,9 @@ git clone https://github.com/TaoWangzj/LLDiffusion.git
 
 ## Train
 
-1. Train on LOL dataset 
+1. Train on the LOL dataset 
 ```sh
-python train.py --config configs/deg-unet.yml
+python train.py --config configs/deg-unet-lol.yml
 ```
 
 2. Train on LOL-v2-real dataset 
@@ -69,21 +69,21 @@ python train.py --config configs/deg-unet-lol-v2-sys.yml
 
 # Test
 
-1. Test on LOL dataset 
+1. Test on the LOL dataset 
 ```sh
 python test.py --config configs/deg-unet.yml --resume checkpoints/LOL/best-355-23.32.pth 
 ```
-2. Test on LOL-v2-real dataset 
+2. Test on the LOL-v2-real dataset 
 ```sh
 python test.py --config configs/deg-unet-lol-v2-real.yml --resume checkpoints/lol-v2-real/best-5499-24.10.pth
 ```
-3. Test on LOL-v2-synthetic dataset 
+3. Test on the LOL-v2-synthetic dataset 
 ```sh
 python test.py --config configs/deg-unet-lol-v2-syn.yml --resume checkpoints/lol-v2-syn/best-3999-25.99.pth
 ```
 
 ## Results
-Experiments are performed for different LLIE datasets including, LOL, VE-LOL, LOL-v2, and real-world LLIE datasets. 
+Experiments are performed for different LLIE datasets, including LOL, VE-LOL, LOL-v2, and real-world LLIE datasets. 
 
 <details>
 <summary><strong>LOL dataset</strong> (click to expand) </summary>
